@@ -1,8 +1,139 @@
-/*
-Colors:
+/* -------- General formating -------- */
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
 
-Text: 1A1A1A
-Green: #00B172
-White: #FFF
 
-*/
+/* -------- Header and navbar -------- */
+nav {
+    /* position: fixed; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 2vw;
+}
+
+nav img {
+    height: 45px;
+}
+nav a {
+    padding: 0 10px;
+    text-decoration: none;
+    color: gray;
+    font-weight: lighter;
+}
+
+
+/* -------- Large image background with text -------- */
+#Landing {
+    background-image: url("../images/landing.jpg");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 650px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 4rem;
+    padding: 30px 0;
+}
+#Landing > p {
+    font-size: 1.4rem;
+    padding-bottom: 70px;
+    font-weight: lighter;
+}
+
+
+/* -------- What is on Spotify section -------- */
+#OnSpotify h2 {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 2.0rem;
+    /* border-bottom: 5px solid white; */
+    text-decoration: underline solid #00B172;
+}
+#OnSpotify .container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+
+#OnSpotify .container > div {
+    margin: 0 40px;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#OnSpotify h3 {
+    color: #00B172;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 15px 0;
+}
+
+#OnSpotify img {
+    height: 70px;
+}
+
+#OnSpotify p {
+    text-align: center;
+    color: gray;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    font-weight: lighter;
+}
+
+
+/* -------- The green section --------  */
+#greenSection {
+    background-color: #00B172;
+    margin: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+}
+
+#greenSection #white-logo {
+    position: absolute;
+    width: 10vw;
+    left: 50%;
+    margin-left: -5vw;
+}
+
+#greenSection #app-image {
+    width: 25vw;
+}
+
+#greenSection h2 {
+    font-size: 2.0rem;
+    /* border-bottom: 5px solid white; */
+    text-decoration: underline solid white;
+}
+
+.text-div {
+    width: 25vw;
+}
+
+#greenSection h3 {
+    font-size: 1.4rem;
+    padding: 30px 0;
+}
+#greenSection p {
+    font-size: 1.1rem;
+    font-weight: lighter;
+    line-height: 1.6rem;
+}
